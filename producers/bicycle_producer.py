@@ -17,7 +17,7 @@ class BicycleProducer():
                      'compression.type': 'lz4',
                      'enable.idempotence': 'true',
                      'max.in.flight.requests.per_second': '5',
-                     'aacks':'all'}
+                     'acks':'all'}
         self.producer = Producer(self.conf)
         self._set_logger()
 
